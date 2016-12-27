@@ -1,3 +1,4 @@
+# coding: utf-8
 from django.contrib import admin
 
 from learning_logs.models import Topic, Entry

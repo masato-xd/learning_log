@@ -1,3 +1,4 @@
+# coding: utf-8
 """
 Django settings for learning_log project.
 
@@ -40,6 +41,8 @@ INSTALLED_APPS = [
     # my apps
     'learning_logs',
     'users',
+    # Third-party Tools
+    'bootstrap3',
 ]
 
 MIDDLEWARE = [
@@ -106,7 +109,8 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+#LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-hans'
 
 TIME_ZONE = 'Asia/Shanghai'
 
@@ -122,3 +126,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 LOGIN_URL = '/users/login/'
+
+# django-bootstrap3的设置
+BOOTSTRAP3 = {
+    'include_jquery': True,
+}
